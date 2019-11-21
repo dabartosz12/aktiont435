@@ -69,6 +69,12 @@ button:focus {
   letter-spacing: .1em;
   color: #fff;
   border: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.shit-gowno button:hover {
+  background: #272727d0;
 }
 
 /*Header*/
@@ -569,6 +575,19 @@ header .hamburger-menu .stripe {
   font-family: Cormorant;
   font-weight: bolder;
   text-transform: capitalize;
+}
+
+.newsletter-section-main .container .input-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .newsletter-section-main .container .input-btn input, .newsletter-section-main .container .input-btn button {
