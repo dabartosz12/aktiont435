@@ -9,3 +9,8 @@ const menuXD = () => {
 }
 
 menuXD();
+
+const thumb = document.querySelector(".side-image");
+const galleryImg = document.querySelector(".main-image");
+
+
