@@ -13,6 +13,19 @@ tl.from(".image-behind", 1, {scaleX:0, transformOrigin:"left", ease: Expo.easeIn
   .to(".image-behind", 1, {scaleX:0, transformOrigin:"right", ease: Expo.easeInOut, width: "100%"}, "reveal")
   .from(".image-of-us-sub-page", .5, {opacity:0, delay: -0.25}, "reveal");
 
+  TweenMax.from(".header-one-about", 1, {
+    y: -50,
+    opacity: 0,
+    ease: Expo.easeInOut,
+})
+
+  TweenMax.from(".para-about-sub", 1, {
+    y: -50,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: .5
+})
+
 TweenMax.from(menu, 1, {
     opacity: "0", y: "-30px", 
     ease: Expo.easeInOut,
@@ -67,6 +80,10 @@ window.addEventListener("scroll", () => {
 });
 //gallery
 
-thumb.addEventListener("click", () => {
-    galleryImg.style.opacity = "0";
-});
+//scroll
+var controller = new ScrollMagic.Controller();
+
+const scene = new ScrollMagic.Scene({triggerElement: ".collection-section"})
+.setVelocity(".collection-gird-container", {opacity: 0}, {duration: 400})
+.addIndicators() // add indicators (requires plugin)
+.addTo(controller);

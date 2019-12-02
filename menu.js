@@ -10,7 +10,11 @@ const menuXD = () => {
 
 menuXD();
 
-const thumb = document.querySelector(".side-image");
+const thumb = document.querySelector(".img1");
 const galleryImg = document.querySelector(".main-image");
+
+for(let i = 0; i < thumb.clientHeight; i++) {
+    console.log(thumb);
+};
 
 

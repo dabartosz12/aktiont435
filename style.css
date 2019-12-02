@@ -84,7 +84,7 @@ header {
 }
 
 header nav {
-  max-width: 1500px;
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,81 +632,115 @@ header .hamburger-menu .stripe {
 
 /*Landing page*/
 /*About*/
-.main-container-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.imgs-sub-page {
+  position: relative;
+  width: 70vw;
+  height: 60vh;
+  margin: auto;
+}
+
+.imgs-sub-page .our-image {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imgs-sub-page .image-behind-lol {
+  position: absolute;
+  bottom: -5%;
+  z-index: -1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+  height: 20%;
+}
+
+.inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.inner h1 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  font-family: Cormorant;
+  color: #333;
+}
+
+.inner p {
+  max-width: 630px;
+  line-height: 28px;
+  font-size: 1.05rem;
+  margin: 0 0 25px 0;
+  color: #333;
+}
+
+.text-container-sub-page {
+  min-height: 70vh;
+  max-width: 1100px;
+  margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1400px;
-  margin: auto;
-  min-height: 90vh;
-}
-
-.main-container-about .img-wrapper {
-  position: relative;
-}
-
-.main-container-about .image-behind {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: #333;
-  -o-object-fit: cover;
-     object-fit: cover;
-  top: 0;
-  left: 0;
-}
-
-.main-container-about .image-of-us-sub-page {
-  width: 25vw;
-  height: 60vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.main-container-about .text-wrappper {
-  max-width: 630px;
-  padding: 0 10px 0 50px;
-}
-
-.main-container-about .text-wrappper h1 {
-  font-family: 'Playfair Display', serif;
-  padding: 0 0 20px 0;
-  line-height: 39px;
-  letter-spacing: .05rem;
-  font-size: 2.4em;
-}
-
-.main-container-about .text-wrappper p {
-  font-family: 'Muli', sans-serif;
-  line-height: 24px;
-}
-
-.main-container-about .text-wrappper .contact-part {
-  padding: 30px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main-container-about .text-wrappper .contact-part p {
-  padding: 10px 0;
+.inner-conetnt {
+  max-width: 490px;
 }
 
-.main-container-about .text-wrappper .contact-part a {
-  text-decoration: none;
-  color: #333;
-  margin: 5px 0;
-  cursor: pointer;
+.contact-info {
+  max-width: 1100px;
+  min-height: 40vh;
+  margin: auto;
+}
+
+.contact-info h1 {
+  font-family: Muli;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.contact-info .para {
+  margin: 1.7rem 0 3.5em 0;
+  line-height: 28px;
+}
+
+.contact-info .email-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-info .email-phone .email {
+  margin: 0 100px 0 0;
+}
+
+.contact-info .email-phone h2 {
+  color: #535353;
+  font-weight: normal;
+  font-family: Roboto;
+  letter-spacing: .02em;
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  text-transform: capitalize;
+}
+
+.contact-info .email-phone p {
+  font-size: 1.1rem;
 }
 
 /*About*/
@@ -871,7 +905,7 @@ header .hamburger-menu .stripe {
 }
 
 .grid-container-look-row {
-  background: #757575;
+  background: #f1f1f1;
   padding: 200px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1122,15 +1156,46 @@ header .hamburger-menu .stripe {
 .other-item .text-in {
   z-index: 1;
   position: absolute;
+  text-transform: uppercase;
   opacity: 0;
   color: #fff;
+  letter-spacing: .05em;
+  font-family: Muli;
   -webkit-transition: .2s;
   transition: .2s;
-  bottom: 10%;
-  left: 5%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*Choesn-item*/
+/*Terms of Use*/
+.main-conent {
+  max-width: 1300px;
+  margin: auto;
+  position: relative;
+  padding: 100px 0;
+}
+
+.main-conent h1 {
+  font-weight: bold;
+  font-family: Muli;
+  margin: 0 0 30px 0;
+}
+
+.main-conent p {
+  font-size: 1.1rem;
+  line-height: 29px;
+  letter-spacing: .03em;
+  max-width: 770px;
+}
+
+.main-conent p:nth-child(odd) {
+  margin: 20px 0;
+}
+
+/*Terms of Use*/
 /*Footer*/
 footer {
   width: 100%;
@@ -1140,14 +1205,19 @@ footer {
 
 .copyright-mark p {
   font-family: Muli;
+  font-size: .85rem;
 }
 
 .footer-transparent {
   background: none;
 }
 
-.footer-transparent p, .footer-transparent .logo {
+.footer-transparent p {
   color: #141414;
+}
+
+.footer-transparent .logo {
+  color: #272727 !important;
 }
 
 .footer-inner {
@@ -1175,6 +1245,7 @@ footer {
   font-family: Muli !important;
   -webkit-transition: color .2s ease;
   transition: color .2s ease;
+  font-size: .85rem;
   cursor: pointer;
 }
 
@@ -1183,11 +1254,12 @@ footer {
 }
 
 .footer-inner .logo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: .05em;
   -webkit-transition: color .2s ease;
   transition: color .2s ease;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .footer-inner .logo a {
@@ -1219,12 +1291,16 @@ footer {
 @media screen and (max-width: 1581px) {
   .nav-bar-scroll, .collection-section, .about-section-start,
   .text, .input-btn, .footer-inner, .items-main-collection,
-  .main-container-about {
+  .main-container-about, .email-phone, .main-container-about-sub-page,
+  .main-conent {
     margin: 0 20px;
   }
 }
 
 @media screen and (max-width: 956px) {
+  .image-start {
+    margin: 0 0 3em 0;
+  }
   .input-btn {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -1349,6 +1425,36 @@ footer {
 }
 
 @media screen and (max-width: 786px) {
+  .image-behind-lol {
+    display: none;
+  }
+  .email-phone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .email {
+    margin: 0 0 30px 0 !important;
+  }
+  .inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .inner h1 {
+    margin: 0 0 20px 0;
+  }
+  .text-container-sub-page {
+    margin-bottom: 2em;
+    margin-top: 2.5em;
+  }
   .main-imgs {
     width: 100% !important;
   }
@@ -1420,6 +1526,16 @@ footer {
 }
 
 @media screen and (max-width: 641px) {
+  .main-conent {
+    padding: 50px 0 0 0;
+  }
+  .main-conent h1 {
+    font-size: 1.7rem;
+  }
+  .main-conent p {
+    line-height: 23px;
+    font-size: .95rem;
+  }
   .text-wrapper-landing p {
     line-height: 27px;
   }
@@ -1442,6 +1558,27 @@ footer {
 }
 
 @media screen and (max-width: 539px) {
+  .shit-gowno {
+    right: 10% !important;
+  }
+  .shit-gowno button {
+    padding: 12px 26px;
+  }
+  .container-inside {
+    max-width: 100%;
+  }
+  .container-inside .text {
+    margin: 0 !important;
+  }
+  .container-inside .text h1 {
+    font-size: 1.5rem;
+  }
+  .container-inside .text p {
+    font-size: 1rem !important;
+  }
+  .input-btn input {
+    width: 90vw !important;
+  }
   .about-section-start .text {
     margin: 0 !important;
   }
@@ -1451,6 +1588,9 @@ footer {
   .text-wrapper-landing {
     -webkit-transform: translateX(0) translateY(70%) !important;
             transform: translateX(0) translateY(70%) !important;
+  }
+  .text-wrapper-landing h1 {
+    font-size: 2.1rem !important;
   }
   .text-wrapper-landing button {
     font-size: 85%;
