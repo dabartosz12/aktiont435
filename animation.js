@@ -1,73 +1,94 @@
-const logo = document.querySelector(".logo");
-const menu = document.querySelector(".hamburger-menu");
-const modelImage = document.querySelector(".model-img");
-const section = document.querySelector(".collection-section");
 const btnUp = document.querySelector(".shit-gowno");
-const ooo = document.querySelector(".image-of-us-sub-page");
-
+const menu = document.querySelector(".hamburger-menu");
 
 const tl = new TimelineMax();
 
+//landing
 
-tl.from(".image-behind", 1, {scaleX:0, transformOrigin:"left", ease: Expo.easeInOut, width: "0%"})
-  .to(".image-behind", 1, {scaleX:0, transformOrigin:"right", ease: Expo.easeInOut, width: "100%"}, "reveal")
-  .from(".image-of-us-sub-page", .5, {opacity:0, delay: -0.25}, "reveal");
-
-  TweenMax.from(".header-one-about", 1, {
-    y: -50,
-    opacity: 0,
-    ease: Expo.easeInOut,
+TweenMax.to(".pre-backgorund", 1.5, {
+    height: "0%",
+    delay: 5,
+    ease: Expo.easeInOut
 })
 
-  TweenMax.from(".para-about-sub", 1, {
-    y: -50,
-    opacity: 0,
-    ease: Expo.easeInOut,
-    delay: .5
-})
-
-TweenMax.from(menu, 1, {
-    opacity: "0", y: "-30px", 
-    ease: Expo.easeInOut,
-})
-
-TweenMax.from(logo, 1, {
-    opacity: "0", y: "-30px", 
-    ease: Expo.easeInOut,
-})
-
-TweenMax.staggerFrom(".test-xd", 1, {
-    opacity: "0",
+TweenMax.staggerFrom(".letter", 1, {
     y: 30,
+    opacity: 0,
     delay: 1,
-})
+    ease: Expo.easeInOut
+}, 0.05)
 
+TweenMax.staggerTo(".letter", 1, {
+    y: -30,
+    opacity: 0,
+    delay: 3,
+    ease: Expo.easeInOut
+}, 0.05)
 
-TweenMax.from(modelImage, 1.5, {
-    width: "0",
+TweenMax.from(".promo-photo", 1, {
+    width: 0,
     ease: Expo.easeInOut,
-    transformOrigin: '100% 50%',
-    delay: 1,
+    delay: 6,
 })
 
-tl.staggerFrom(".header-1-landing", .5, {
+TweenMax.staggerFrom(".text-in-elem", 1, {
+    y: -30,
+    ease: Expo.easeInOut,
+    opacity: 0,
+    delay: 6.7,
+}, 0.25)
+
+TweenMax.from(".test-xd-landing", 1, {
     opacity: "0",
-    y: 20,
+    y: "-30px", 
     ease: Expo.easeInOut,
-    delay: 1.2
-}, 0.01)
+    delay: 7,
+})
 
-tl.staggerFrom(".para-under", .5, {
-    opacity:0,
-    y: 40,
+TweenMax.from(".hamburger-menu-landing", 1, {
+    opacity: "0",
+    y: "-30px", 
     ease: Expo.easeInOut,
-}, 0.01)
+    delay: 6,
+})
 
-tl.staggerFrom(".btn-chk", .5, {
-    opacity:0,
-    y: 40,
+TweenMax.from(".logo-landing", 1, {
+    opacity: "0",
+    y: "-30px", 
     ease: Expo.easeInOut,
-}, 0.01)
+    delay: 6,
+})
+
+TweenMax.from(".socials", 1, {
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 7.5,
+})
+
+//rest
+
+TweenMax.from(".animation-main", 1, {
+    opacity: 0,
+    ease: Expo.easeInOut,
+})
+
+//chosen-item
+
+menu.addEventListener("click", ()=> {
+    TweenMax.staggerFrom(".stagger", .8, {
+        opacity: 0,
+        x: -25,
+        ease: Expo.easeInOut,
+        delay: .8
+    },0.25);
+
+    TweenMax.staggerFrom(".stagger2", .8, {
+        opacity: 0,
+        x: -25,
+        ease: Expo.easeInOut,
+        delay: 1.3
+    },0.1)
+});
 
 //button main page
 window.addEventListener("scroll", () => {
@@ -78,12 +99,3 @@ window.addEventListener("scroll", () => {
         btnUp.style.opacity = "0";
     }
 });
-//gallery
-
-//scroll
-var controller = new ScrollMagic.Controller();
-
-const scene = new ScrollMagic.Scene({triggerElement: ".collection-section"})
-.setVelocity(".collection-gird-container", {opacity: 0}, {duration: 400})
-.addIndicators() // add indicators (requires plugin)
-.addTo(controller);

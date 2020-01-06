@@ -13,41 +13,126 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cormorant:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="landing-section" id="#top">
-        <header class="header-langing">
+  <div class="preloader">
+    <div class="pre-backgorund"></div>
+    <span class="letter">A</span>
+    <span class="letter">K</span>
+    <span class="letter">T</span>
+    <span class="letter">I</span>
+    <span class="letter">O</span>
+    <span class="letter">N</span>
+  </div>
+
+    <div id="#top" class="landing-page-background">
+        <header class="header-landing">
             <nav class="nav-bar-scroll">
-                <a href="index.html" class="logo">aktion</a>
+                <a href="index.html" class="logo logo-landing">aktion</a>
               <div class="nav-inner-test">
-                <div class="hamburger-menu">
+                <div class="hamburger-menu hamburger-menu-landing close">
                     <div class="stripe1 stripe"></div>
                     <div class="stripe2 stripe"></div>
                 </div>
-                <ul class="test">
-                  <a href="collection.html">
-                    <li class="test-xd">collection</li>
-                  </a>
-                  <a href="lookbook.html">
-                    <li class="test-xd">lookbook</li>
-                  </a>
-                  <a href="about.html">
-                    <li class="test-xd">about</li>
-                  </a>
-                  </ul>
+                
+                <ul class="test nav-first-black">
+                  <li class="test-xd-landing cart-reveal test-xd-landing">CART(1)</li>
+                  <li class="test-xd-landing test-xd-landing acc">MY ACCOUNT</li>
+                </ul>
+      
+                <div class="cart-in-header">
+                  <div class="header-close">
+                    <div class="cross">
+                      <div class="cross-part sec-fir"></div>
+                      <div class="cross-part sec-sec"></div>
+                    </div>
+                  </div>
+                  <div class="prod-selected">
+                  <div class="container-inner">
+                    <h1>Your shopping cart</h1>
+                      <div class="selected-item">
+                        <img src="images/lookbook/lookbook-photo2.jpg" alt="" class="prod-photo">
+      
+                        <div class="text-of-item">
+      
+                          <div class="price-tit">
+                            <h4>Basic t-shirt</h4>
+                            <span>59.99 PLN</span>
+                          </div>
+      
+                          <div class="qtn">
+                            <p>quantity</p>
+                            <div class="shit">
+                              <div class="plus">
+                                <div class="stripe strip-one"></div>
+                                <div class="stripe strip-two"></div>
+                              </div>
+                              <div class="ilosc">1</div>
+                              <div class="minus"></div>
+                            </div>
+                          </div>
+      
+                          <a href=""><button class="remove">Remove</button></a>
+      
+                        </div>
+      
+                      </div>
+                    </div>
+      
+                    <div class="summary">
+      
+                      <h2>Podsumowanie</h2>
+      
+                      <div class="code-price">
+                        <p>Kod Promocyjny</p>
+                        <input type="text">
+                      </div>
+      
+                      <div class="subtotal">
+                        <p class="sum">Suma</p>
+                        <span class="total-price">499.99 PLN</span>
+                      </div>
+      
+                      <a href=""><button class="go-to-cart">Przejdź do kasy 
+                        <div class="arrow">
+                          <div class="stick"></div>
+                          <div class="triangle"></div>
+                        </div>
+                      </button></a>
+      
+                    </div>
+      
+                  </div>
+                </div>
+
                 <div class="menu">
                   <div class="menu-inner">
+                    <div class="contact">
+                      <p class="contact-header stagger2">contact:</p>
+                      <a href="mailto:piotrlodzik@gmail.com"class="stagger2">piotrlodzik@gmail.com</a>
+                      <p class="stagger2">+42 213 742 069</p>
+                      <p class="social-header stagger2">socials</p>
+                      <div class="socials-in-menu">
+                        <ion-icon name="logo-facebook" class="stagger2"></ion-icon>
+                        <ion-icon name="logo-youtube" class="stagger2"></ion-icon>
+                        <ion-icon name="logo-instagram" class="stagger2"></ion-icon>
+                      </div>
+                    </div>
                       <div class="nav-sub-pages">
                           <a href="collection.html">
-                            <li>collection</li>
+                            <li class="stagger">collection</li>
                           </a>
                           <a href="lookbook.html">
-                            <li>lookbook</li>
+                            <li class="stagger">lookbook</li>
                           </a>
                           <a href="about.html">
-                            <li>about</li>
+                            <li class="stagger">about</li>
+                          </a>
+                          <a href="login.html">
+                            <li class="stagger">account</li>
                           </a>
                         </div>
                   </div>
@@ -55,99 +140,109 @@
             </div>
             </nav>
           </header>
-      <div class="image-backgorund">
-        <div class="backgorund-dark"></div>
-        <img src="images/noiseee.png" alt="" class="img-noise">
-        <img src="images/11.jpg" alt="" class="model-img">
-        <div class="text-wrapper text-wrapper-landing">
-          <h1 class="header-1-landing">New Collection</h1>
-          <p class="para-under">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-          <button class="btn-chk">check out</button>
+
+          <div class="landing-page-content">
+            <div class="promo-new-row">
+              <h1 class="side-text">AKTION</h1>
+              <img src="images/landing/1.jpg" alt="" class="promo-photo">
+              <div class="text-in">
+                <h3 class="text-in-elem">NEW COLLECTION</h3>
+                <h1 class="text-in-elem">SUMMER COLLECTION 2020</h1>
+                <button class="text-in-elem">check out</button>
+              </div>
+            </div>
+            <div class="socials">
+              <ul>
+                <li>facebook</li>
+                <li>twitter</li>
+                <li>instagram</li>
+              </ul>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="bestseller-section">
+      <div class="header">
+        <h1>Bestseller</h1>
+        <button>view all<div class="arrow"></div></button>
+      </div>
+      <div class="product-bestseller-section">
+
+        <div class="item-in">
+          <img src="images/landing/tom-cochereau-bf_CMgK8Pj0-unsplash.jpg" alt="">
+          <div class="name-of-prod">
+            <h2>T-shirt - <br> white with pattern</h2>
+            <h2>see more</h2>
+          </div>
+        </div>
+
+        <div class="item-in">
+          <img src="images/landing/jamieson-murphy-aVK6zfswuAQ-unsplash.jpg" alt="">
+          <div class="name-of-prod">
+            <h2>T-shirt - <br> white with pattern</h2>
+            <h2>see more</h2>
+          </div>
+        </div>
+
+        <div class="item-in">
+          <img src="images/landing/guillaume-bleyer-2GAu2WG3_Kw-unsplash.jpg" alt="">
+          <div class="name-of-prod">
+            <h2>T-shirt - <br> white with pattern</h2>
+            <h2>see more</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="collection-advert">
+      <div class="content">
+        <img src="images/landing/alex-holyoake-Es4HBdXKXgc-unsplash.jpg" alt="">
+        <h1>COLLECTION <br> SPRING/SUMMER 2020</h1>
+      </div>
+    </div>
+
+    <div class="instgram-seciton">
+      <div class="container">
+        <div class="wrapper-header">
+          <h2>See us in action</h2>
+          <button>view our instagram <div class="arrow"></div></button>
+        </div>
+        <div class="images">
+          <img src="images/2.jpg" alt="">
+          <img src="images/2.jpg" alt="">
+          <img src="images/2.jpg" alt="">
+          <img src="images/2.jpg" alt="">
+          <img src="images/2.jpg" alt="">
         </div>
       </div>
     </div>
 
-  <div class="collection-section">
+  <div class="about-start">
 
-    <div class="collection-gird-container">
-
-    <div class="hedaer-img-start">
-      <h2>CHECK OUR <br> NEWEST <br> COLLECTION</h2>
-      <img src="images/0.png" alt="">
-    </div>
-
-    <div class="item-section-collection item1">
-      <img src="images/9.jpg" alt="">
-      <a href="" class="go-to-page">
-        <div class="text-wrapp">
-          <p class="title">T-shirt - <br> white with pattern</p>
-          <p class="see-more">see more</p>
-        </div>
-      </a>
-    </div>
-
-    <div class="item-section-collection item2">
-        <img src="images/9.jpg" alt="">
-        <a href="" class="go-to-page">
-          <div class="text-wrapp">
-            <p class="title">T-shirt - <br> white with pattern</p>
-            <p class="see-more">see more</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="item-section-collection item3">
-        <img src="images/9.jpg" alt="">
-        <a href="" class="go-to-page">
-          <div class="text-wrapp">
-            <p class="title">T-shirt - <br> white with pattern</p>
-            <p class="see-more">see more</p>
-          </div>
-        </a>
-      </div>
-
-  </div>
-
-</div>
-  <div class="about-section-start">
-      
-    <div class="image-start">
-      <img src="images/0.png" alt="" class="image-backgorund-liquid">
-      <img src="images/8.jpg" alt="" class="image-of-us">
+    <div class="upper">
+      <h1>about</h1>
+      <img src="images/selected-item/karl-fredrickson-DsAjH9B24G8-unsplash.jpg" alt="">
     </div>
 
     <div class="text">
-      <div class="header">
-        <h1>About <img src="images/0.png" alt=""></h1>
-      </div>
-      <div class="text-wrap-start">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At lectus urna duis convallis convallis tellus id. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Aliquam ut porttitor. convallis tellus id. </p>
-        <button>Read more</button>
-      </div>
+      <p>Eget nulla facilisi etiam dignissim. Aliquam ut porttitor. convallis tellus id. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Aliquam ut porttitor.</p>
+      <button>read more <div class="stripe"></div></button>
     </div>
 
   </div>
 
-  <div class="newsletter-section-main">
-
-    <div class="container">
-
-        <img src="images/bloki.jpg" alt="">
-
-        <div class="container-inside">
-
-          <div class="text">
-          <h1>sing up to our newsletter</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-        </div>
-
-        <div class="input-btn">
-          <input type="text" placeholder="Your Adress Email">
-          <button>subscribe</button>
-        </div>
-
-      </div>
-  
+  <div class="transparent-newsletter">
+    <div class="text-section">
+      <h2>sing up to our newsletter</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+    </div>
+    <div class="provide-email">
+      <form action="">
+        <input type="text" placeholder="your adress email">
+        <button>subscribe</button>
+      </form>
     </div>
   </div>
 
@@ -163,7 +258,7 @@
 
   </div>
 
-  <footer>
+  <footer class="footer-transparent">
     <div class="footer-inner">
       <div class="logo"> <a href="index.html">aktion</a></div>
       <div class="info-footer">
@@ -172,23 +267,72 @@
         <p>select language</p>
       </div>
       <div class="socials">
-        <a href="https://www.facebook.com/"> <p>facebook</p></a>
-        <a href="https://www.twitter.com"> <p>twitter</p></a>
-        <a href="https://www.instagram.com/"> <p>instagram</p></a>
+        <a href="facebook.com"> <p>facebook</p></a>
+        <a href="twitter.com"> <p>twitter</p></a>
+        <a href="instagram.com"> <p>instagram</p></a>
       </div>
-      <div class="cipyright-mark">
+      <div class="copyright-mark">
         <p>© 2019 — AKTIONT4</p>
       </div>
     </div>
   </footer>
   
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script>
+  
+const cartReveal = document.querySelector(".cart-in-header");
+const cartRevealBtn = document.querySelector(".cart-reveal");
+const cartClose = document.querySelector(".cross");
+const plus = document.querySelector(".plus");
+const minus = document.querySelector(".minus");
+const number = document.querySelector(".ilosc");
+
+cartRevealBtn.addEventListener("click", () =>{
+    cartReveal.classList.toggle("_active-cart")
+    console.log("hi")
+});
+
+cartClose.addEventListener("click", () =>{
+    cartReveal.classList.remove("_active-cart")
+    console.log("narła")
+});
+
+let numberChangeAdd = 1;
+
+plus.addEventListener("click", ()=> {
+    numberChangeAdd++;
+
+    number.innerHTML = numberChangeAdd;
+
+    if(number.innerHTML > 15) {
+        number.innerHTML = 15;
+    }
+
+});
+
+
+minus.addEventListener("click", ()=> {
+
+    if(number.innerHTML < 1) {
+        number.innerHTML = 1;
+    }
+
+    if(number.innerHTML > 1) {
+        number.innerHTML = numberChangeAdd--;
+    }
+});
+    
+  </script>
+
     <script src="menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <script src="animation.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 
 </body>
 
